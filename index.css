@@ -1,0 +1,237 @@
+*{
+    transition:all 0.5s;
+}
+.t1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.4rem;
+    padding: 0.4rem;
+}
+.b1{
+    padding: 0.6rem;
+}
+.t1 div{
+    font-size: larger;
+    font-weight: bold;
+}
+#btn-2{
+    border: none;
+    background-color: rgb(0, 191, 255);
+    color: white;
+    height: 2rem;
+    width: 8rem;
+    border-radius: 7px;
+    cursor: pointer;
+}
+#btn-21{
+    border: none;
+    background-color: rgb(0, 191, 255);
+    color: white;
+    height: 2rem;
+    width: 8rem;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+#btn-1{
+    border: none;
+    font-size: large;
+    color: rgb(95, 93, 93);
+    background: none;
+    cursor: pointer;
+}
+#btn-11{
+    border: none;
+    font-size: large;
+    color: rgb(95, 93, 93);
+    background: none;
+    cursor: pointer;
+}
+
+#i1{
+    width: 80%;
+    
+}
+#addd{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1.6rem;
+}
+#i11{
+    width: 80%;
+    
+}
+#addd1{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1.6rem;
+}
+
+#pop.active{
+    transform: translate(-50%,-50%) scale(1);
+}
+#pop1.active{
+    transform: translate(-50%,-50%) scale(1);
+}
+#overlay{
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    pointer-events: none;
+}
+#overlay.active{
+    opacity: 1;
+    pointer-events: all;
+}
+#pop{
+    border-radius: 15px;
+    height: 11rem;
+    width:22rem;
+    background-color: white;
+    position: fixed;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%,-50%) scale(0);
+    z-index: 10;
+    
+}
+
+#pop1{
+    border-radius: 15px;
+    height: 11rem;
+    width:22rem;
+    background-color: white;
+    position: fixed;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%,-50%) scale(0);
+    z-index: 10;
+    
+}
+
+
+.border{
+    border: 2px solid black;
+}
+body{
+    margin: 0px;
+}
+.nav{
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    color:black;
+    font-size: 1.7rem;
+    padding-left: 6rem;
+    background-color: white;
+    
+    
+}
+
+
+.nav span{
+    color:rgb(0, 191, 255);
+}
+
+.tasks{
+    height: 4rem;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 6rem;
+    align-items: center;
+    font-size: 1.5rem;
+}
+.tasks button{
+    border-radius: 50%;
+    height: 2.5rem;
+    width: 2.5rem;
+    background-color:rgb(0, 191, 255);
+    border: none;
+    color:white;
+    font-size: 2rem;
+    cursor:pointer;
+    
+}
+
+
+.shadow{
+    box-shadow: inset 0.0px 5.0px 20.0px hsl(0deg 0% 0% / 0.38); 
+}
+
+.bg{
+    background-color: rgb(223, 222, 222);
+ }
+
+.list{
+    background-color: rgb(223, 222, 222);
+    padding : 2rem 8rem;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.task{
+    margin: 1rem;
+    background-color:white;
+    height: 18rem;
+    width: 18rem;
+    display: grid;
+    border-radius: 0.5rem;
+    grid-template-rows: 20% auto;
+}
+
+.task:hover{
+    box-shadow: 4.0px 8.0px 20.0px hsl(0deg 0% 0% / 0.38);
+}
+
+.topic div button{
+    vertical-align: top;
+    border-radius: 50%;
+    height: 1.7rem;
+    width: 1.7rem;
+    background-color:rgb(0, 191, 255);
+    border: none;
+    color:white;
+    font-size: 1.2rem;
+    cursor:pointer;
+
+}
+
+.adds{
+    font-size: 1.38rem;
+}
+.topic{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color:rgb(0, 191, 255);
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 1rem;
+    
+    border-bottom: 0.2rem solid rgb(241, 241, 241) ;
+}
+.todo{
+ padding: 1rem;   
+ font-size: 1.1rem;
+ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ overflow-y: auto;
+}
+.todo input{
+    height: 1.2rem;
+    width: 1.2rem;
+    vertical-align: middle;
+    
+}
+.todo label{
+    vertical-align: middle;
+    font-weight:500;
+}
+
+
+
